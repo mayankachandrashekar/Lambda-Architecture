@@ -1,0 +1,71 @@
+2016-09-22 20:36:33 o.m.log [INFO] Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2016-09-22 20:36:33 o.m.log [INFO] jetty-6.1.26
+2016-09-22 20:36:33 o.m.log [INFO] Started SocketConnector@0.0.0.0:8080
+2016-09-22 20:36:37 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:36:37 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:36:37 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:36:37 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:37:32 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:37:32 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:37:32 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:37:32 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:38:33 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:38:33 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:38:33 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:38:33 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:38:49 o.m.log [INFO] Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2016-09-22 20:38:49 o.m.log [INFO] jetty-6.1.26
+2016-09-22 20:38:49 o.m.log [WARN] failed SocketConnector@0.0.0.0:8080: java.net.BindException: Address already in use
+2016-09-22 20:38:49 o.m.log [WARN] failed Server@48a2d557: java.net.BindException: Address already in use
+2016-09-22 20:39:03 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:39:03 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:39:03 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:39:03 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:41:04 o.m.log [INFO] Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2016-09-22 20:41:04 o.m.log [INFO] jetty-6.1.26
+2016-09-22 20:41:04 o.m.log [WARN] failed SocketConnector@0.0.0.0:8080: java.net.BindException: Address already in use
+2016-09-22 20:41:04 o.m.log [WARN] failed Server@3a646802: java.net.BindException: Address already in use
+2016-09-22 20:44:12 o.m.log [INFO] Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2016-09-22 20:44:12 o.m.log [INFO] jetty-6.1.26
+2016-09-22 20:44:12 o.m.log [WARN] failed SocketConnector@0.0.0.0:8080: java.net.BindException: Address already in use
+2016-09-22 20:44:12 o.m.log [WARN] failed Server@3a646802: java.net.BindException: Address already in use
+2016-09-22 20:46:42 o.m.log [INFO] Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2016-09-22 20:46:42 o.m.log [INFO] jetty-6.1.26
+2016-09-22 20:46:42 o.m.log [INFO] Started SocketConnector@0.0.0.0:8080
+2016-09-22 20:46:54 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:46:54 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:46:54 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 20:46:54 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:01:45 o.m.log [INFO] Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2016-09-22 21:01:45 o.m.log [INFO] jetty-6.1.26
+2016-09-22 21:01:45 o.m.log [INFO] Started SocketConnector@0.0.0.0:8080
+2016-09-22 21:01:47 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:01:47 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:01:47 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:01:47 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:01:47 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:01:47 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:01:47 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:01:47 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:16:08 o.m.log [INFO] Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2016-09-22 21:16:08 o.m.log [INFO] jetty-6.1.26
+2016-09-22 21:16:08 o.m.log [INFO] Started SocketConnector@0.0.0.0:8080
+2016-09-22 21:16:09 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:16:09 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:16:09 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:16:09 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:16:22 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:16:22 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:16:22 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:16:22 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:19:14 o.m.log [INFO] Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2016-09-22 21:19:14 o.m.log [INFO] jetty-6.1.26
+2016-09-22 21:19:14 o.m.log [INFO] Started SocketConnector@0.0.0.0:8080
+2016-09-22 21:19:16 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:19:16 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:19:16 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:19:16 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:25:34 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:25:34 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:25:34 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
+2016-09-22 21:25:34 b.s.thrift [INFO] Connecting to Nimbus at localhost:6627
