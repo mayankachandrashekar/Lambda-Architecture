@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="linkedExternalProjectsSettings">
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Kafka-Spark-Producer" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Kafka-Spark-Producer" />
+            <option value="$PROJECT_DIR$/Kafka-Spark-Producer/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="0.13.8" />
+        <option name="useAutoImport" value="true" />
+        <option name="useOurOwnAutoImport" value="true" />
+      </SbtProjectSettings>
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Kafka-Spark-Sample" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Kafka-Spark-Sample" />
+            <option value="$PROJECT_DIR$/Kafka-Spark-Sample/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="0.13.8" />
+        <option name="useAutoImport" value="true" />
+        <option name="useOurOwnAutoImport" value="true" />
+      </SbtProjectSettings>
+    </option>
+  </component>
+</project>
