@@ -23,21 +23,12 @@ public class WordCountBolt extends BaseBasicBolt {
     @Override
     public void execute(Tuple tuple, BasicOutputCollector basicOutputCollector) {
         String word = tuple.getStringByField("words");
-        log = LoggerFactory.getLogger(BaseBasicBolt.class);
+        log = LoggerFactory.getLogger(WordCountBolt.class);
         Integer count = counts.get(word);
         if (count == null)
             count = 0;
         count++;
         counts.put(word, count);
-        try {
-            BufferedWriter br = new BufferedWriter(new FileWriter(new File("output"), true));
-            br.append(word + ":" + count + "\n");
-            br.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        log.info("Word:" + word +" Count:" +count);
-       // insertIntoMongoDB(word, count);
         log.info("WordStore:" + word +" CountStore:" +count);
         basicOutputCollector.emit(new Values(word, count));
 

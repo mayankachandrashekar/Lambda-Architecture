@@ -66,20 +66,9 @@ public class StormKafkaProducer {
     private static StormTopology createTopology()
     {
         TopologyBuilder builder = new TopologyBuilder();
-
-        /*Fields fields = new Fields("word", "count");
-        FixedBatchSpout spout = new FixedBatchSpout(fields, 4,
-                new Values("storm", "1"),
-                new Values("trident", "1"),
-                new Values("needs", "1"),
-                new Values("javadoc", "1")
-        );
-        spout.setCycle(true);
-        builder.setSpout("spout", spout, 5);
-        */
         SpoutConfig kafkaConf = new SpoutConfig(
                 new ZkHosts("localhost:2181"),
-                "test",
+                "ARUNIT",
                 "/kafka",
                 "KafkaSpout");
         kafkaConf.scheme = new SchemeAsMultiScheme(new StringScheme());
@@ -89,8 +78,8 @@ public class StormKafkaProducer {
         builder.setBolt("SplitSentence", new SplitSentenceBolt(), 4).shuffleGrouping("KafkaSpout");
         log.info("Split sentence");
         builder.setBolt("WordCount",new WordCountBolt(),4).shuffleGrouping("SplitSentence");
-        KafkaBolt bolt = new KafkaBolt().withTopicSelector(new DefaultTopicSelector("test1"))
-                .withTupleToKafkaMapper(new FieldNameBasedTupleToKafkaMapper());
+        KafkaBolt bolt = new KafkaBolt().withTopicSelector(new DefaultTopicSelector("testmarmik"))
+                .withTupleToKafkaMapper(new FieldNameBasedTupleToKafkaMapper("word", "count"));
         builder.setBolt("forwardToKafka", bolt, 8).shuffleGrouping("WordCount");
         log.info("Kafka bolt");
         return builder.createTopology();
