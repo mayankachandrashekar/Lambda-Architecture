@@ -45,12 +45,19 @@ public class Parsing {
                     if (check == true) {
                         String l = tree.get(tree.size()-1);
                         tree.remove(tree.size()-1);
-                        String newl = l.replaceAll("else if", "if");
-                        tree.add(newl);
+//                        String newl = l.replaceAll("else if", "if");
+                        tree.add(l);
                         check = false;
                     }
                     String labelChange = modelArray[i].replaceAll(label, "true");
                     tree.add(labelChange);
+
+
+                    /*
+                    Recursively check and replace Else IF with IF till previous leaf
+                     */
+
+//                    checkRecursive(tree, tree.size() - 1);
                 }
 
                 /*
@@ -76,6 +83,12 @@ public class Parsing {
         }
 
 
+        for(int i=0; i<tree.size() - 1;i++){
+            if(tree.get(i).trim().startsWith("if") && tree.get(i+1).trim().startsWith("else if")){
+                tree.remove(i);
+            }
+        }
+
         Joiner joiner = Joiner.on("\n").useForNull("null");
         String output = joiner.join(tree);
 
@@ -87,6 +100,27 @@ public class Parsing {
         BufferedWriter bw = new BufferedWriter(fw);
         bw.write(output);
         bw.close();
+    }
+
+
+    public static void checkRecursive(List<String> tree, int length){
+        int newLenght = length;
+        if(tree.get(length - 1).contains("else if")){
+            String l = tree.get(length - 1);
+            String newl = l.replaceAll("else if", "if");
+            tree.remove(length - 1);
+            tree.add(length - 1, newl);
+            checkRecursive(tree, length - 1);
+        }
+        else if (tree.get(length - 1).contains("return"))
+            return;
+        else{
+            if (length > 1)
+                checkRecursive(tree, length - 1);
+            else
+                return;
+        }
+
     }
 
 }

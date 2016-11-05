@@ -1,4 +1,4 @@
-import dtParsing.Parsing;
+import dtParsing.ParsingNew;
 import org.json.JSONObject;
 import topology.CreateBolt;
 import topology.CreateStromMainClass;
@@ -26,7 +26,7 @@ public class MainClass {
         /*
         Getting model from mongo DB
          */
-        String urlString = "https://api.mlab.com/api/1/databases/kafkaconsumer/collections/model/58119b71bd966f3409264d29?apiKey=NV6PEwYt13rsIJu21LnqTqGtnC_pZv3X";
+        String urlString = "https://api.mlab.com/api/1/databases/kafkaconsumer/collections/model/581b8d16bd966f752bf04520?apiKey=NV6PEwYt13rsIJu21LnqTqGtnC_pZv3X";
 
         StringBuilder sb1 = new StringBuilder();
         InputStreamReader  in = null;
@@ -49,7 +49,7 @@ public class MainClass {
         }
 
         JSONObject jsonObject = new JSONObject(sb1.toString());
-        String model = jsonObject.get("Model").toString();
+        String model = jsonObject.get("data").toString();
 
         System.out.println("Got Model from Mongo");
         
@@ -57,10 +57,10 @@ public class MainClass {
         From the input model, derive paths for each class
          */
 
-        Parsing parsing1 = new Parsing(model, "data/Class1.txt", "1.0");
-        Parsing parsing2 = new Parsing(model, "data/Class2.txt", "2.0");
-        Parsing parsing3 = new Parsing(model, "data/Class3.txt", "3.0");
-        Parsing parsing4 = new Parsing(model, "data/Class4.txt", "4.0");
+        ParsingNew parsing1 = new ParsingNew(model, "data/Class1.txt", "1.0");
+        ParsingNew parsing2 = new ParsingNew(model, "data/Class2.txt", "2.0");
+        ParsingNew parsing3 = new ParsingNew(model, "data/Class3.txt", "3.0");
+        ParsingNew parsing4 = new ParsingNew(model, "data/Class4.txt", "4.0");
 
         System.out.println("Derived Class Paths");
         /*
